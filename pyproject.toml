@@ -1,0 +1,17 @@
+[project]
+name = "ups-invoice-analyzer"
+version = "0.1.0"
+description = "Analyze UPS invoices with detailed cost breakdowns, trends, and visualizations"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.0",
+    "streamlit>=1.30",
+    "plotly>=5.18",
+    "pycountry>=23.12",
+    "fpdf2>=2.7",
+    "kaleido>=0.2",
+]
+
+[project.scripts]
+ups-analyzer = "main:main"
